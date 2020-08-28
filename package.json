@@ -1,0 +1,24 @@
+{
+  "name": "visualnightwatch",
+  "version": "1.0.0",
+  "description": "visual testing nightwatch",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch",
+    "vrt-test": "nightwatch -c nightwatch-vrt.conf.js",
+    "udiff-vrt-test":"UDIFF=1 nightwatch -c nightwatch-vrt.conf.js"
+
+  },
+  "author": "naufalfh",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "chromedriver": "^84.0.1",
+    "nightwatch": "^1.3.7"
+  },
+  "dependencies": {
+    "nightwatch-vrt": "^0.2.10"
+  }
+}
